@@ -12,9 +12,15 @@ namespace Movie_Bonanza
 {
     public partial class SplashForm : Form
     {
+
+        // reference to the selection form
+        public SelectionForm nextForm;
+
         public SplashForm()
         {
             InitializeComponent();
         }
+
+
     }
 }

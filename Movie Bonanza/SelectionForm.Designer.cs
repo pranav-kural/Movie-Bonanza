@@ -1,6 +1,6 @@
 ﻿namespace Movie_Bonanza
 {
-    partial class Form1
+    partial class SelectionForm
     {
         /// <summary>
         /// Required designer variable.

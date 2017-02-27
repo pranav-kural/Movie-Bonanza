@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.MovieBonanzoLabel = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.LogoPictureBox = new System.Windows.Forms.PictureBox();
+            this.SplashFormTimer = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // MovieBonanzoLabel
@@ -44,15 +46,20 @@
             this.MovieBonanzoLabel.TabIndex = 0;
             this.MovieBonanzoLabel.Text = "Movie Bonanzo";
             // 
-            // pictureBox1
+            // LogoPictureBox
             // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = global::Movie_Bonanza.Properties.Resources.movie_bonanza_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(155, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(476, 453);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.LogoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.LogoPictureBox.Image = global::Movie_Bonanza.Properties.Resources.movie_bonanza_logo;
+            this.LogoPictureBox.Location = new System.Drawing.Point(155, 12);
+            this.LogoPictureBox.Name = "LogoPictureBox";
+            this.LogoPictureBox.Size = new System.Drawing.Size(476, 453);
+            this.LogoPictureBox.TabIndex = 1;
+            this.LogoPictureBox.TabStop = false;
+            // 
+            // SplashFormTimer
+            // 
+            this.SplashFormTimer.Enabled = true;
+            this.SplashFormTimer.Interval = 3000;
             // 
             // SplashForm
             // 
@@ -61,11 +68,11 @@
             this.BackColor = System.Drawing.Color.Brown;
             this.ClientSize = new System.Drawing.Size(795, 469);
             this.Controls.Add(this.MovieBonanzoLabel);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.LogoPictureBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SplashForm";
             this.Text = "SplashForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -74,6 +81,7 @@
         #endregion
 
         private System.Windows.Forms.Label MovieBonanzoLabel;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox LogoPictureBox;
+        private System.Windows.Forms.Timer SplashFormTimer;
     }
 }
