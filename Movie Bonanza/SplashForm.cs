@@ -21,6 +21,19 @@ namespace Movie_Bonanza
             InitializeComponent();
         }
 
+        private void SplashFormTimer_Tick(object sender, EventArgs e)
+        {
+            // create an instance of the SelectionForm
+            SelectionForm mySelectionForm = new SelectionForm();
 
+            // disbale the timer of the splash form
+            this.SplashFormTimer.Enabled = false;
+
+            // show the SelectionForm
+            mySelectionForm.Show();
+
+            // hide this form
+            this.Hide();
+        }
     }
 }
