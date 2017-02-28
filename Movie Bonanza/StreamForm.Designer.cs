@@ -68,10 +68,10 @@
             // StreamMessageLabel
             // 
             this.StreamMessageLabel.AutoSize = true;
-            this.StreamMessageLabel.Font = new System.Drawing.Font("Century Gothic", 13.75F);
-            this.StreamMessageLabel.Location = new System.Drawing.Point(61, 127);
+            this.StreamMessageLabel.Font = new System.Drawing.Font("Century Gothic", 11.75F);
+            this.StreamMessageLabel.Location = new System.Drawing.Point(77, 127);
             this.StreamMessageLabel.Name = "StreamMessageLabel";
-            this.StreamMessageLabel.Size = new System.Drawing.Size(0, 22);
+            this.StreamMessageLabel.Size = new System.Drawing.Size(0, 21);
             this.StreamMessageLabel.TabIndex = 3;
             this.StreamMessageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -80,11 +80,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(473, 230);
+            this.ControlBox = false;
             this.Controls.Add(this.StreamMessageLabel);
             this.Controls.Add(this.MovieChargeLabel);
             this.Controls.Add(this.OkButton);
             this.Controls.Add(this.ThankYouMessageLabel);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "StreamForm";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StreamForm";
             this.ResumeLayout(false);
             this.PerformLayout();

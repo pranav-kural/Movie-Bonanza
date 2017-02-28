@@ -114,5 +114,26 @@ namespace Movie_Bonanza
             // hide the OrderForm
             this.Hide();
         }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            // close all the forms and exit the application
+            Environment.Exit(0); // will also close all the background processes
+        }
+
+        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // display print preview message
+            MessageBox.Show("The details of your order are being printed. Thank you.", "Print Movie Order Details");
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Create an instance of the AboutBox
+            AboutBox myAboutBox = new AboutBox();
+
+            // Show About Dialog box
+            myAboutBox.ShowDialog();
+        }
     }
 }
