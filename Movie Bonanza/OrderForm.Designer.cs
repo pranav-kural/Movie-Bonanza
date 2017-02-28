@@ -255,6 +255,7 @@
             this.AdditionalOptionCheckBox.TabIndex = 4;
             this.AdditionalOptionCheckBox.Text = "Order the DVD (adds $10.00 to your order)";
             this.AdditionalOptionCheckBox.UseVisualStyleBackColor = true;
+            this.AdditionalOptionCheckBox.CheckedChanged += new System.EventHandler(this.AdditionalOptionCheckBox_CheckedChanged);
             // 
             // CostTextBox
             // 

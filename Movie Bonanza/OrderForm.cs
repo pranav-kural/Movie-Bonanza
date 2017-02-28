@@ -21,20 +21,29 @@ namespace Movie_Bonanza
             InitializeComponent();
         }
 
+        // fill the details of movie selected
         public void _fillMovieSelectedDetails()
         {
             // filling the OrderForm text boxes with the current 
             // selection information being accessed through the parentForm (SelectionForm)
-            this.TitleTextBox.Text = parentForm.selectedMovie[0];
-            this.CategoryTextBox.Text = parentForm.selectedMovie[1];
-            this.SelectionPictureBox.BackgroundImage = parentForm.selectedMovieImage;
+            // fill the Movies Selected group box
+            _fillMovieSelectedGroupBox();
 
             // calculating and filling the values for the YourOrder textboxes
-            _calculateMovieCost();
+            _fillYourOrderGroupBox();
 
         }
 
-        private void _calculateMovieCost()
+        // fill the Movies Selected group box
+        private void _fillMovieSelectedGroupBox()
+        {
+            this.TitleTextBox.Text = parentForm.selectedMovie[0];
+            this.CategoryTextBox.Text = parentForm.selectedMovie[1];
+            this.SelectionPictureBox.BackgroundImage = parentForm.selectedMovieImage;
+        }
+
+        // Calculates the price value for the YourOrder group box text boxes and display them
+        private void _fillYourOrderGroupBox()
         {
             // update the cost value
             this.CostTextBox.Text = "$" + parentForm.selectedMovie[2];
@@ -58,6 +67,31 @@ namespace Movie_Bonanza
         private double _getSanitizedPriceValue(TextBox textBox)
         {
             return Math.Round(Double.Parse(textBox.Text.Replace('$', ' ').Trim()), 2);
+        }
+
+        // The optional physical delivery option check box event handler
+        private void AdditionalOptionCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            // if user selects the option for physical delivery of the movie
+            if (this.AdditionalOptionCheckBox.Checked)
+            {
+                // make the Additional charge text box and label visible to the user
+                this.AdditionalChargeLabel.Visible = true;
+                this.AdditionalChargeTextBox.Visible = true;
+                // add the charge of 10 dollars to the additional charge text box
+                this.AdditionalChargeTextBox.Text = "$10.00";
+            } else
+            {
+                // if the user unselects
+
+                // hide the additional charge text box and label
+                this.AdditionalChargeLabel.Visible = false;
+                this.AdditionalChargeTextBox.Visible = false;
+                // reset it's value to zero
+                this.AdditionalChargeTextBox.Text = "0";
+            }
+            // update the values of the YourOrder group box text boxes
+            _fillYourOrderGroupBox();
         }
     }
 }
