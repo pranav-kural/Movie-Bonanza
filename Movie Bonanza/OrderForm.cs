@@ -93,5 +93,17 @@ namespace Movie_Bonanza
             // update the values of the YourOrder group box text boxes
             _fillYourOrderGroupBox();
         }
+
+        private void StreamButton_Click(object sender, EventArgs e)
+        {
+            // create a new instance of StreamForm
+            StreamForm myStreamForm = new StreamForm(this.GrandTotalTextBox.Text, this.TitleTextBox.Text);
+
+            // show the StreamForm
+            myStreamForm.Show();
+
+            // hide the OrderForm
+            this.Hide();
+        }
     }
 }

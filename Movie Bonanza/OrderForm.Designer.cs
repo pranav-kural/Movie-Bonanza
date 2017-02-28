@@ -54,7 +54,7 @@
             this.SalesTaxTextBox = new System.Windows.Forms.TextBox();
             this.GrandTotalTextBox = new System.Windows.Forms.TextBox();
             this.CancelButton = new System.Windows.Forms.Button();
-            this.NextButton = new System.Windows.Forms.Button();
+            this.StreamButton = new System.Windows.Forms.Button();
             this.BackButton = new System.Windows.Forms.Button();
             this.AdditionalChargeTextBox = new System.Windows.Forms.TextBox();
             this.AdditionalChargeLabel = new System.Windows.Forms.Label();
@@ -291,27 +291,31 @@
             // 
             // CancelButton
             // 
-            this.CancelButton.Location = new System.Drawing.Point(437, 441);
+            this.CancelButton.Font = new System.Drawing.Font("Century Gothic", 10.25F);
+            this.CancelButton.Location = new System.Drawing.Point(432, 435);
             this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(85, 29);
+            this.CancelButton.Size = new System.Drawing.Size(90, 35);
             this.CancelButton.TabIndex = 3;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
             // 
-            // NextButton
+            // StreamButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(526, 441);
-            this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(85, 29);
-            this.NextButton.TabIndex = 4;
-            this.NextButton.Text = "Next";
-            this.NextButton.UseVisualStyleBackColor = true;
+            this.StreamButton.Font = new System.Drawing.Font("Century Gothic", 10.25F);
+            this.StreamButton.Location = new System.Drawing.Point(528, 435);
+            this.StreamButton.Name = "StreamButton";
+            this.StreamButton.Size = new System.Drawing.Size(83, 35);
+            this.StreamButton.TabIndex = 4;
+            this.StreamButton.Text = "Stream";
+            this.StreamButton.UseVisualStyleBackColor = true;
+            this.StreamButton.Click += new System.EventHandler(this.StreamButton_Click);
             // 
             // BackButton
             // 
-            this.BackButton.Location = new System.Drawing.Point(293, 441);
+            this.BackButton.Font = new System.Drawing.Font("Century Gothic", 10.25F);
+            this.BackButton.Location = new System.Drawing.Point(293, 435);
             this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(85, 29);
+            this.BackButton.Size = new System.Drawing.Size(85, 35);
             this.BackButton.TabIndex = 5;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
@@ -342,7 +346,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(623, 506);
             this.Controls.Add(this.BackButton);
-            this.Controls.Add(this.NextButton);
+            this.Controls.Add(this.StreamButton);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.YourOrderGroupBox);
             this.Controls.Add(this.MovieSelectedGroupBox);
@@ -389,7 +393,7 @@
         private System.Windows.Forms.TextBox SubTotalTextBox;
         private System.Windows.Forms.TextBox CostTextBox;
         private System.Windows.Forms.Button CancelButton;
-        private System.Windows.Forms.Button NextButton;
+        private System.Windows.Forms.Button StreamButton;
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Label AdditionalChargeLabel;
         private System.Windows.Forms.TextBox AdditionalChargeTextBox;
