@@ -56,6 +56,8 @@
             this.CancelButton = new System.Windows.Forms.Button();
             this.NextButton = new System.Windows.Forms.Button();
             this.BackButton = new System.Windows.Forms.Button();
+            this.AdditionalChargeTextBox = new System.Windows.Forms.TextBox();
+            this.AdditionalChargeLabel = new System.Windows.Forms.Label();
             this.OrderFormMenuStrip.SuspendLayout();
             this.MovieSelectedGroupBox.SuspendLayout();
             this.YourOrderGroupBox.SuspendLayout();
@@ -179,6 +181,8 @@
             // 
             // YourOrderGroupBox
             // 
+            this.YourOrderGroupBox.Controls.Add(this.AdditionalChargeLabel);
+            this.YourOrderGroupBox.Controls.Add(this.AdditionalChargeTextBox);
             this.YourOrderGroupBox.Controls.Add(this.GrandTotalTextBox);
             this.YourOrderGroupBox.Controls.Add(this.SalesTaxTextBox);
             this.YourOrderGroupBox.Controls.Add(this.SubTotalTextBox);
@@ -311,6 +315,26 @@
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
             // 
+            // AdditionalChargeTextBox
+            // 
+            this.AdditionalChargeTextBox.Location = new System.Drawing.Point(165, 101);
+            this.AdditionalChargeTextBox.Name = "AdditionalChargeTextBox";
+            this.AdditionalChargeTextBox.ReadOnly = true;
+            this.AdditionalChargeTextBox.Size = new System.Drawing.Size(119, 24);
+            this.AdditionalChargeTextBox.TabIndex = 9;
+            this.AdditionalChargeTextBox.Text = "0";
+            this.AdditionalChargeTextBox.Visible = false;
+            // 
+            // AdditionalChargeLabel
+            // 
+            this.AdditionalChargeLabel.AutoSize = true;
+            this.AdditionalChargeLabel.Location = new System.Drawing.Point(23, 104);
+            this.AdditionalChargeLabel.Name = "AdditionalChargeLabel";
+            this.AdditionalChargeLabel.Size = new System.Drawing.Size(136, 19);
+            this.AdditionalChargeLabel.TabIndex = 10;
+            this.AdditionalChargeLabel.Text = "Additional Charge";
+            this.AdditionalChargeLabel.Visible = false;
+            // 
             // OrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -366,5 +390,7 @@
         private System.Windows.Forms.Button CancelButton;
         private System.Windows.Forms.Button NextButton;
         private System.Windows.Forms.Button BackButton;
+        private System.Windows.Forms.Label AdditionalChargeLabel;
+        private System.Windows.Forms.TextBox AdditionalChargeTextBox;
     }
 }

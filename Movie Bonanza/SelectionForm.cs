@@ -17,6 +17,10 @@ namespace Movie_Bonanza
         // list of movies with their categories
         private Dictionary<string, _movies> _movieList;
 
+        // selected movie
+        public string[] selectedMovie;
+        public Image selectedMovieImage;
+
         public SelectionForm()
         {
             InitializeComponent();
@@ -63,8 +67,8 @@ namespace Movie_Bonanza
             {
                 name = movieName;
                 category = categoryName;
-                cost = "$";
                 image_short_code = image;
+                cost = "";
                 setCost();
             }
 
@@ -75,18 +79,18 @@ namespace Movie_Bonanza
                     case "Comedy":
                     case "Drama":
                     case "Thriller":
-                        cost += "1.99";
+                        cost = "1.99";
                         break;
                     case "Action":
                     case "Sci-Fi":
                     case "Horror":
-                        cost += "2.99";
+                        cost = "2.99";
                         break;
                     case "Family":
-                        cost += "0.99";
+                        cost = "0.99";
                         break;
                     case "New Release":
-                        cost += "4.99";
+                        cost = "4.99";
                         break;
                 }
             }
@@ -96,7 +100,7 @@ namespace Movie_Bonanza
         {
             // update the Your Selection text boxes
             SelectionPictureBox.BackgroundImage = this._movieList[this.MovieListBox.SelectedItem.ToString()].image_short_code;
-            TitleTextBox.Text = this._movieList[this.MovieListBox.SelectedItem.ToString()].name;
+            MovieTitleTextBox.Text = this._movieList[this.MovieListBox.SelectedItem.ToString()].name;
             CategoryTextBox.Text = this._movieList[this.MovieListBox.SelectedItem.ToString()].category;
             CostTextBox.Text = this._movieList[this.MovieListBox.SelectedItem.ToString()].cost;
 
@@ -107,11 +111,18 @@ namespace Movie_Bonanza
 
         private void NextButton_Click(object sender, EventArgs e)
         {
+            // storing the info about the current selection at the time pressing of the next button
+            this.selectedMovie = new [] { MovieTitleTextBox.Text, CategoryTextBox.Text, this._movieList[this.MovieListBox.SelectedItem.ToString()].cost };
+            this.selectedMovieImage = this._movieList[this.MovieListBox.SelectedItem.ToString()].image_short_code;
+
             // creating an instance of the OrderForm
             OrderForm myOrderForm = new OrderForm();
 
             // passing this form as the parent form
             myOrderForm.parentForm = this;
+
+            // calling the OrderForm method to fill in the form
+            myOrderForm._fillMovieSelectedDetails();
 
             // showing the OrderForm
             myOrderForm.Show();

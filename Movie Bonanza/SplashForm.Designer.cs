@@ -42,9 +42,9 @@
             this.MovieBonanzoLabel.ForeColor = System.Drawing.Color.DarkSalmon;
             this.MovieBonanzoLabel.Location = new System.Drawing.Point(222, 3);
             this.MovieBonanzoLabel.Name = "MovieBonanzoLabel";
-            this.MovieBonanzoLabel.Size = new System.Drawing.Size(383, 58);
+            this.MovieBonanzoLabel.Size = new System.Drawing.Size(385, 58);
             this.MovieBonanzoLabel.TabIndex = 0;
-            this.MovieBonanzoLabel.Text = "Movie Bonanzo";
+            this.MovieBonanzoLabel.Text = "Movie Bonanza";
             // 
             // LogoPictureBox
             // 
