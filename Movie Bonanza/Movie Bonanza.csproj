@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderForm.Designer.cs">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SelectionForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,69 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\movie_bonanza_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cedar_Rapids.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Company_Men.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Death_Race_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Footloose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gnomeo_and_Juliet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I_am_Number_Four.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Just_Go_With_It.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No_Strings_ Attached.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Real_Steel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Season_of_the_Witch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The_Dilemma.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The_Eagle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The_Green_Hornet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The_Mechanic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The_Other_Woman.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The_Rite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The_Roommate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The_Way_Back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Waiting_for_Forever.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No_Strings_ Attached1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sanctum.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

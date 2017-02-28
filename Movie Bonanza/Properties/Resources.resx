@@ -118,7 +118,70 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="The_Eagle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\The_Eagle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Death_Race_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Death_Race_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cedar_Rapids" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cedar_Rapids.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="The_Mechanic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\The_Mechanic.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="The_Rite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\The_Rite.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="No_Strings_ Attached" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\No_Strings_ Attached.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="The_Way_Back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\The_Way_Back.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="I_am_Number_Four" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\I_am_Number_Four.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="The_Dilemma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\The_Dilemma.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="The_Roommate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\The_Roommate.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gnomeo_and_Juliet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gnomeo_and_Juliet.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="movie_bonanza_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\movie_bonanza_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Waiting_for_Forever" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Waiting_for_Forever.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Just_Go_With_It" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Just_Go_With_It.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="The_Green_Hornet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\The_Green_Hornet.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Real_Steel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Real_Steel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Company_Men" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Company_Men.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Season_of_the_Witch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Season_of_the_Witch.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="The_Other_Woman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\The_Other_Woman.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Footloose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Footloose.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="No_Strings_ Attached1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\No_Strings_ Attached1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sanctum" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sanctum.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
