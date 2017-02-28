@@ -130,5 +130,6 @@ namespace Movie_Bonanza
             // hiding the SelectionForm
             this.Hide();
         }
+        
     }
 }

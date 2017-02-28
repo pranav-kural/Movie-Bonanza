@@ -105,5 +105,14 @@ namespace Movie_Bonanza
             // hide the OrderForm
             this.Hide();
         }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            // show the parentForm back again
+            parentForm.Show();
+
+            // hide the OrderForm
+            this.Hide();
+        }
     }
 }
