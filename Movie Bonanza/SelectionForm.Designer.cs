@@ -40,6 +40,8 @@
             this.TitleTextBox = new System.Windows.Forms.TextBox();
             this.SelectionPictureBox = new System.Windows.Forms.PictureBox();
             this.NextButton = new System.Windows.Forms.Button();
+            this.MovieTitleTextBox = new System.Windows.Forms.TextBox();
+            this.MovieTitleLabel = new System.Windows.Forms.Label();
             this.SelectionDetailsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SelectionPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -102,9 +104,11 @@
             // 
             this.SelectionDetailsGroupBox.Controls.Add(this.CostLabel);
             this.SelectionDetailsGroupBox.Controls.Add(this.CategoryLabel);
+            this.SelectionDetailsGroupBox.Controls.Add(this.MovieTitleLabel);
             this.SelectionDetailsGroupBox.Controls.Add(this.TitleLabel);
             this.SelectionDetailsGroupBox.Controls.Add(this.CostTextBox);
             this.SelectionDetailsGroupBox.Controls.Add(this.CategoryTextBox);
+            this.SelectionDetailsGroupBox.Controls.Add(this.MovieTitleTextBox);
             this.SelectionDetailsGroupBox.Controls.Add(this.TitleTextBox);
             this.SelectionDetailsGroupBox.Controls.Add(this.SelectionPictureBox);
             this.SelectionDetailsGroupBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -194,6 +198,25 @@
             this.NextButton.UseVisualStyleBackColor = true;
             this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
+            // MovieTitleTextBox
+            // 
+            this.MovieTitleTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.MovieTitleTextBox.Location = new System.Drawing.Point(192, 95);
+            this.MovieTitleTextBox.Name = "MovieTitleTextBox";
+            this.MovieTitleTextBox.ReadOnly = true;
+            this.MovieTitleTextBox.Size = new System.Drawing.Size(239, 26);
+            this.MovieTitleTextBox.TabIndex = 1;
+            // 
+            // MovieTitleLabel
+            // 
+            this.MovieTitleLabel.AutoSize = true;
+            this.MovieTitleLabel.Font = new System.Drawing.Font("Century Gothic", 12.25F);
+            this.MovieTitleLabel.Location = new System.Drawing.Point(192, 64);
+            this.MovieTitleLabel.Name = "MovieTitleLabel";
+            this.MovieTitleLabel.Size = new System.Drawing.Size(42, 21);
+            this.MovieTitleLabel.TabIndex = 4;
+            this.MovieTitleLabel.Text = "Title";
+            // 
             // SelectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -232,6 +255,8 @@
         private System.Windows.Forms.Label CategoryLabel;
         private System.Windows.Forms.Label TitleLabel;
         private System.Windows.Forms.Button NextButton;
+        private System.Windows.Forms.Label MovieTitleLabel;
+        private System.Windows.Forms.TextBox MovieTitleTextBox;
     }
 }
 
