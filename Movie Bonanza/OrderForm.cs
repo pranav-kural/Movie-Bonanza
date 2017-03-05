@@ -123,6 +123,8 @@ namespace Movie_Bonanza
 
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // show movie information
+
             // display print preview message
             MessageBox.Show("The details of your order are being printed. Thank you.", "Print Movie Order Details");
         }

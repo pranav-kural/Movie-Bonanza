@@ -34,14 +34,13 @@
             this.SelectionDetailsGroupBox = new System.Windows.Forms.GroupBox();
             this.CostLabel = new System.Windows.Forms.Label();
             this.CategoryLabel = new System.Windows.Forms.Label();
-            this.TitleLabel = new System.Windows.Forms.Label();
+            this.MovieTitleLabel = new System.Windows.Forms.Label();
             this.CostTextBox = new System.Windows.Forms.TextBox();
             this.CategoryTextBox = new System.Windows.Forms.TextBox();
-            this.TitleTextBox = new System.Windows.Forms.TextBox();
+            this.MovieTitleTextBox = new System.Windows.Forms.TextBox();
             this.SelectionPictureBox = new System.Windows.Forms.PictureBox();
             this.NextButton = new System.Windows.Forms.Button();
-            this.MovieTitleTextBox = new System.Windows.Forms.TextBox();
-            this.MovieTitleLabel = new System.Windows.Forms.Label();
+            this.WatchTrailerButton = new System.Windows.Forms.Button();
             this.SelectionDetailsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SelectionPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -102,14 +101,13 @@
             // 
             // SelectionDetailsGroupBox
             // 
+            this.SelectionDetailsGroupBox.Controls.Add(this.WatchTrailerButton);
             this.SelectionDetailsGroupBox.Controls.Add(this.CostLabel);
             this.SelectionDetailsGroupBox.Controls.Add(this.CategoryLabel);
             this.SelectionDetailsGroupBox.Controls.Add(this.MovieTitleLabel);
-            this.SelectionDetailsGroupBox.Controls.Add(this.TitleLabel);
             this.SelectionDetailsGroupBox.Controls.Add(this.CostTextBox);
             this.SelectionDetailsGroupBox.Controls.Add(this.CategoryTextBox);
             this.SelectionDetailsGroupBox.Controls.Add(this.MovieTitleTextBox);
-            this.SelectionDetailsGroupBox.Controls.Add(this.TitleTextBox);
             this.SelectionDetailsGroupBox.Controls.Add(this.SelectionPictureBox);
             this.SelectionDetailsGroupBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SelectionDetailsGroupBox.Location = new System.Drawing.Point(273, 130);
@@ -123,7 +121,7 @@
             // 
             this.CostLabel.AutoSize = true;
             this.CostLabel.Font = new System.Drawing.Font("Century Gothic", 12.25F);
-            this.CostLabel.Location = new System.Drawing.Point(347, 148);
+            this.CostLabel.Location = new System.Drawing.Point(347, 115);
             this.CostLabel.Name = "CostLabel";
             this.CostLabel.Size = new System.Drawing.Size(49, 21);
             this.CostLabel.TabIndex = 6;
@@ -133,26 +131,26 @@
             // 
             this.CategoryLabel.AutoSize = true;
             this.CategoryLabel.Font = new System.Drawing.Font("Century Gothic", 12.25F);
-            this.CategoryLabel.Location = new System.Drawing.Point(192, 148);
+            this.CategoryLabel.Location = new System.Drawing.Point(192, 115);
             this.CategoryLabel.Name = "CategoryLabel";
             this.CategoryLabel.Size = new System.Drawing.Size(89, 21);
             this.CategoryLabel.TabIndex = 5;
             this.CategoryLabel.Text = "Category";
             // 
-            // TitleLabel
+            // MovieTitleLabel
             // 
-            this.TitleLabel.AutoSize = true;
-            this.TitleLabel.Font = new System.Drawing.Font("Century Gothic", 12.25F);
-            this.TitleLabel.Location = new System.Drawing.Point(192, 64);
-            this.TitleLabel.Name = "TitleLabel";
-            this.TitleLabel.Size = new System.Drawing.Size(42, 21);
-            this.TitleLabel.TabIndex = 4;
-            this.TitleLabel.Text = "Title";
+            this.MovieTitleLabel.AutoSize = true;
+            this.MovieTitleLabel.Font = new System.Drawing.Font("Century Gothic", 12.25F);
+            this.MovieTitleLabel.Location = new System.Drawing.Point(192, 35);
+            this.MovieTitleLabel.Name = "MovieTitleLabel";
+            this.MovieTitleLabel.Size = new System.Drawing.Size(42, 21);
+            this.MovieTitleLabel.TabIndex = 4;
+            this.MovieTitleLabel.Text = "Title";
             // 
             // CostTextBox
             // 
             this.CostTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.CostTextBox.Location = new System.Drawing.Point(351, 181);
+            this.CostTextBox.Location = new System.Drawing.Point(351, 148);
             this.CostTextBox.MaxLength = 4;
             this.CostTextBox.Name = "CostTextBox";
             this.CostTextBox.ReadOnly = true;
@@ -162,20 +160,20 @@
             // CategoryTextBox
             // 
             this.CategoryTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.CategoryTextBox.Location = new System.Drawing.Point(192, 181);
+            this.CategoryTextBox.Location = new System.Drawing.Point(188, 148);
             this.CategoryTextBox.Name = "CategoryTextBox";
             this.CategoryTextBox.ReadOnly = true;
             this.CategoryTextBox.Size = new System.Drawing.Size(153, 26);
             this.CategoryTextBox.TabIndex = 2;
             // 
-            // TitleTextBox
+            // MovieTitleTextBox
             // 
-            this.TitleTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.TitleTextBox.Location = new System.Drawing.Point(192, 95);
-            this.TitleTextBox.Name = "TitleTextBox";
-            this.TitleTextBox.ReadOnly = true;
-            this.TitleTextBox.Size = new System.Drawing.Size(239, 26);
-            this.TitleTextBox.TabIndex = 1;
+            this.MovieTitleTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.MovieTitleTextBox.Location = new System.Drawing.Point(188, 63);
+            this.MovieTitleTextBox.Name = "MovieTitleTextBox";
+            this.MovieTitleTextBox.ReadOnly = true;
+            this.MovieTitleTextBox.Size = new System.Drawing.Size(239, 26);
+            this.MovieTitleTextBox.TabIndex = 1;
             // 
             // SelectionPictureBox
             // 
@@ -198,24 +196,15 @@
             this.NextButton.UseVisualStyleBackColor = true;
             this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
-            // MovieTitleTextBox
+            // WatchTrailerButton
             // 
-            this.MovieTitleTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.MovieTitleTextBox.Location = new System.Drawing.Point(192, 95);
-            this.MovieTitleTextBox.Name = "MovieTitleTextBox";
-            this.MovieTitleTextBox.ReadOnly = true;
-            this.MovieTitleTextBox.Size = new System.Drawing.Size(239, 26);
-            this.MovieTitleTextBox.TabIndex = 1;
-            // 
-            // MovieTitleLabel
-            // 
-            this.MovieTitleLabel.AutoSize = true;
-            this.MovieTitleLabel.Font = new System.Drawing.Font("Century Gothic", 12.25F);
-            this.MovieTitleLabel.Location = new System.Drawing.Point(192, 64);
-            this.MovieTitleLabel.Name = "MovieTitleLabel";
-            this.MovieTitleLabel.Size = new System.Drawing.Size(42, 21);
-            this.MovieTitleLabel.TabIndex = 4;
-            this.MovieTitleLabel.Text = "Title";
+            this.WatchTrailerButton.Location = new System.Drawing.Point(196, 200);
+            this.WatchTrailerButton.Name = "WatchTrailerButton";
+            this.WatchTrailerButton.Size = new System.Drawing.Size(238, 33);
+            this.WatchTrailerButton.TabIndex = 7;
+            this.WatchTrailerButton.Text = "Watch Trailer";
+            this.WatchTrailerButton.UseVisualStyleBackColor = true;
+            this.WatchTrailerButton.Click += new System.EventHandler(this.WatchTrailerButton_Click);
             // 
             // SelectionForm
             // 
@@ -249,14 +238,13 @@
         private System.Windows.Forms.GroupBox SelectionDetailsGroupBox;
         private System.Windows.Forms.TextBox CostTextBox;
         private System.Windows.Forms.TextBox CategoryTextBox;
-        private System.Windows.Forms.TextBox TitleTextBox;
         private System.Windows.Forms.PictureBox SelectionPictureBox;
         private System.Windows.Forms.Label CostLabel;
         private System.Windows.Forms.Label CategoryLabel;
-        private System.Windows.Forms.Label TitleLabel;
         private System.Windows.Forms.Button NextButton;
         private System.Windows.Forms.Label MovieTitleLabel;
         private System.Windows.Forms.TextBox MovieTitleTextBox;
+        private System.Windows.Forms.Button WatchTrailerButton;
     }
 }
 
