@@ -11,9 +11,11 @@ namespace Movie_Bonanza
 {
     partial class AboutBox : Form
     {
+        // AboutBox constructor
         public AboutBox()
         {
             InitializeComponent();
+            // Set the AboutBox Values based on project assembly information
             this.Text = String.Format("About {0}", AssemblyTitle);
             this.labelProductName.Text = AssemblyProduct;
             this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);

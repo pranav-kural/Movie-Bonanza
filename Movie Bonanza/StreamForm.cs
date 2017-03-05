@@ -12,11 +12,14 @@ namespace Movie_Bonanza
 {
     public partial class StreamForm : Form
     {
+        // StreamForm constructor
         public StreamForm(string grandTotal, string movieName)
         {
             InitializeComponent();
-            this.MovieChargeLabel.Text = "Your credit card will be charged by " + grandTotal;
-            this.StreamMessageLabel.Text = movieName + " will begin streaming shortly";
+            // Show the grand Total
+            this.MovieChargeLabel.Text = $"Your credit card will be charged by {grandTotal}";
+            // show the movie name
+            this.StreamMessageLabel.Text = $"{movieName} will begin streaming shortly";
         }
 
         private void OkButton_Click(object sender, EventArgs e)

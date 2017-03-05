@@ -12,15 +12,13 @@ namespace Movie_Bonanza
 {
     public partial class SplashForm : Form
     {
-
-        // reference to the selection form
-        public SelectionForm nextForm;
-
+        // SplashForm constructor
         public SplashForm()
         {
             InitializeComponent();
         }
 
+        // SplashFormTimer Tick event handler
         private void SplashFormTimer_Tick(object sender, EventArgs e)
         {
             // create an instance of the SelectionForm

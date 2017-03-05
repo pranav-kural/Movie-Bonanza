@@ -10,21 +10,28 @@ using System.Windows.Forms;
 
 namespace Movie_Bonanza
 {
+    /// <summary>
+    /// Movie Trailer Form Class
+    /// 
+    /// BONUS part
+    /// 
+    /// Shows a MovieTrailerForm to show the trailer of the movie from YouTube
+    /// </summary>
     public partial class MovieTrailerForm : Form
     {
-        private string _trailerVideoID;
-
+        // MovieTrailerForm constructor
+        // Requires a Video ID representing the movie trailer video's YouTube ID
         public MovieTrailerForm(string TrailerVideoID)
         {
             InitializeComponent();
-            this._trailerVideoID = TrailerVideoID;
-            this.TrailerWebBrowser.Navigate($"http://youtube.com/v/{this._trailerVideoID}?version=3");
+            // Set the web browser component to navigate to the trailer YouTube link with the ID being interpolated
+            this.TrailerWebBrowser.Navigate($"http://youtube.com/v/{TrailerVideoID}?version=3");
         }
         
-
+        // Close button click event handler
         private void CloseButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close(); // close the MovieTrailerForm
         }
     }
 }

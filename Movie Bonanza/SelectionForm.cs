@@ -8,7 +8,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+///<summary>
+/// Georgian College - Computer Programmer
+/// COMP 1004 - Rapid Application Development
+/// Instructor: Tom Tsiliopoulos
+/// 
+/// Assignment 3: Movie Bonanza – Online Streaming
+/// Create a multi-form project that allows the user to select a Movie 
+/// to view from an online video streaming service called “MovieBonanza”. 
+/// The user will select a Movie from a Drop Down List. The selected Movie 
+/// will display its category and the cost to stream the movie in separate 
+/// labels.The application will then calculate the cost of the Movie 
+/// (including taxes) in a separate form.The cost will vary according to 
+/// the category of the movie. The user will be given the option to buy 
+/// the movie and have a DVD copy sent to him for an additional charge of 
+/// $10.00 (including shipping).
+/// 
+/// BONUS: Added a Movie Trailer Form to show the trailer of the selected movie
+/// 
+/// Author Name: Pranav Kural
+/// Student Number: 200333253
+/// 
+/// Brief revision history:
+/// Initial commit to add default .gitIgnore and .gitAttribute files.
+/// .....
+/// Added the AboutBox
+/// Added the bonus form to show Movie Trailer in selection form
+/// Documentaion and commenting the code
+/// </summary>
 namespace Movie_Bonanza
 {
     public partial class SelectionForm : Form
@@ -23,11 +50,12 @@ namespace Movie_Bonanza
         // Image resource location of the selected movie
         public Image selectedMovieImage;
 
+        // SelectionForm constructor
         public SelectionForm()
         {
             InitializeComponent();
             this._movieList = new Dictionary<string, _movies>(); // instantiate the _moviesList Arraylist
-            this._initializeMoviesList();
+            this._initializeMoviesList(); // fill the movies list
         }
 
         // Initialize the values of the _moviesList ArrayList

@@ -85,6 +85,7 @@
             this.Controls.Add(this.LogoPictureBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SplashForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashForm";
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();
             this.ResumeLayout(false);

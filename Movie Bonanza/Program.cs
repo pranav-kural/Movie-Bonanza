@@ -16,6 +16,7 @@ namespace Movie_Bonanza
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            // show the SplashForm initially
             Application.Run(new SplashForm());
         }
     }

@@ -16,6 +16,7 @@ namespace Movie_Bonanza
         // reference to the parent form
         public SelectionForm parentForm;
 
+        // OderForm constructor
         public OrderForm()
         {
             InitializeComponent();
@@ -37,9 +38,9 @@ namespace Movie_Bonanza
         // fill the Movies Selected group box
         private void _fillMovieSelectedGroupBox()
         {
-            this.TitleTextBox.Text = parentForm.selectedMovie[0];
-            this.CategoryTextBox.Text = parentForm.selectedMovie[1];
-            this.SelectionPictureBox.BackgroundImage = parentForm.selectedMovieImage;
+            this.TitleTextBox.Text = parentForm.selectedMovie[0]; // first element in the selectedMovies array represents the title
+            this.CategoryTextBox.Text = parentForm.selectedMovie[1]; // second element in the selectedMovies array represents the category
+            this.SelectionPictureBox.BackgroundImage = parentForm.selectedMovieImage; // set the image resource
         }
 
         // Calculates the price value for the YourOrder group box text boxes and display them
@@ -66,6 +67,8 @@ namespace Movie_Bonanza
         /// <returns>A decimal number</returns>
         private double _getSanitizedPriceValue(TextBox textBox)
         {
+            // extracts the '$' char from TextBox Text property's value
+            // convert it into a Double and round it off to 2 decimal places before returning
             return Math.Round(Double.Parse(textBox.Text.Replace('$', ' ').Trim()), 2);
         }
 
@@ -88,12 +91,14 @@ namespace Movie_Bonanza
                 this.AdditionalChargeLabel.Visible = false;
                 this.AdditionalChargeTextBox.Visible = false;
                 // reset it's value to zero
-                this.AdditionalChargeTextBox.Text = "0";
+                this.AdditionalChargeTextBox.Text = "0"; 
+                // don't set to empty string, since it needs to be pasred to a double later for calculating grand total
             }
             // update the values of the YourOrder group box text boxes
             _fillYourOrderGroupBox();
         }
 
+        // Stream Button click event handler
         private void StreamButton_Click(object sender, EventArgs e)
         {
             // create a new instance of StreamForm
@@ -106,6 +111,7 @@ namespace Movie_Bonanza
             this.Hide();
         }
 
+        // Back button click event handler
         private void BackButton_Click(object sender, EventArgs e)
         {
             // show the parentForm back again
@@ -115,20 +121,28 @@ namespace Movie_Bonanza
             this.Hide();
         }
 
+        // Cancel Button click event handler
         private void CancelButton_Click(object sender, EventArgs e)
         {
-            // close all the forms and exit the application
-            Environment.Exit(0); // will also close all the background processes
+            // Confirm the user if he/she wants to cancel the order
+            DialogResult confirmCancel = MessageBox.Show("Are you sure you want to cancel?", "Confirm Order Cancellation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            // if user is sure he/she wants to cancel
+            if (confirmCancel == DialogResult.Yes)
+            {
+                // close all the forms and exit the application
+                Environment.Exit(0); // will also close all the background processes
+            }
         }
 
+        // Print menu item click event handler
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // show movie information
-
             // display print preview message
-            MessageBox.Show("The details of your order are being printed. Thank you.", "Print Movie Order Details");
+            MessageBox.Show($"The details of your order for the movie \"{this.TitleTextBox.Text}\", for a total of {this.GrandTotalTextBox.Text} is being printed. Thank you.", "Print Movie Order Details");
         }
 
+        // About menu item click event handler
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Create an instance of the AboutBox
